@@ -90,4 +90,27 @@ body{
     font-size: 16px;
     color: #000;
     font-weight: 400;
+    text-decoration: none;
+}
+
+#footer-section p{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+}
+
+@media (max-width: 991px){
+    #footer-section h4{
+        text-align: center;
+    }
+
+    #footer-section a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #footer-section p{
+       text-align: center;
+    }
 }

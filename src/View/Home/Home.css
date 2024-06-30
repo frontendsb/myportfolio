@@ -1,0 +1,17 @@
+#home-section{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+}
+
+#home-section .my_photo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#home-section .photo_box{
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+}
