@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    font-family: "Work Sans", sans-serif;
+    font-size: 16px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(227, 227, 227);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+
+/* Header Section */
+
+#header-section{
+    width: 100%;
+    height: auto;
+    padding: 13px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#header-section .navbar-brand{
+    font-family: "Work Sans", sans-serif;
+    font-size: 22px;
+    color: 000;
+    font-weight: 600;
+
 }
 
-.App-link {
-  color: #61dafb;
+#header-section .navbar-brand span{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 300;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#header-section .nav-link{
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    color: #000;
+    font-weight: 400;
+    padding: 0 15px;
+    transition: all 0.5s;
+}
+
+#header-section .nav-item:nth-child(2){
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#header-section .nav-link:hover{
+    color: #926402;
+}
+
+@media (max-width:991px){
+    #header-section .nav-link{
+        text-align: center;
+        padding: 6px 0;
+    }
+
+    #header-section .nav-item:nth-child(2){
+        border-left: none;
+        border-right: none;
+    }
+
+    .navbar-collapse{
+        padding: 15px 0;
+    }
 }
