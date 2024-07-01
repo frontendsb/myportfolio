@@ -8,14 +8,14 @@ function index() {
       <section id="home-section">
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-6 col-md-12 col-12">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-12" style={{Padding: "0"}}>
               <div className="my_photo">
                 <div className="photo_box">
                   <img className="img-fluid" src={my_photo} alt="photo" />
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 col-md-12 col-12">
+            <div className="col-xl-6 col-lg-6 col-md-12 col-12" style={{Padding: "0"}}>
               <div className="my_about">
                 <div className="cnt_h">
                   <h1>Hello</h1>
@@ -32,9 +32,9 @@ function index() {
                 </div>
                 <div className="link_btn">
                   <div className="btn_main">
-                    <button>Resume</button>
-                    <button>Projects</button>
-                    <button>Contact</button>
+                    <a href="#" className="resume mb-2">Resume</a>
+                    <a href="#" className="projct mb-2">Projects</a>
+                    <a href="#" className="cnt mb-2">Contact</a>
                   </div>
                 </div>
               </div>
