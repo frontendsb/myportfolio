@@ -1,6 +1,7 @@
 import React from "react";
 import './Home.css';
 import my_photo from "../../images/my_photo.jpg";
+import { Link } from "react-router-dom";
 
 function index() {
   return (
@@ -32,9 +33,9 @@ function index() {
                 </div>
                 <div className="link_btn">
                   <div className="btn_main">
-                    <a href="#" className="resume mb-2">Resume</a>
-                    <a href="#" className="projct mb-2">Projects</a>
-                    <a href="#" className="cnt mb-2">Contact</a>
+                    <Link to="/resume" className="resume mb-2">Resume</Link>
+                    <Link to="/projects" className="projct mb-2">Projects</Link>
+                    <Link to="/contact" className="cnt mb-2">Contact</Link>
                   </div>
                 </div>
               </div>
