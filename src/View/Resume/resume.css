@@ -1,0 +1,80 @@
+#resume-section {
+  width: 100%;
+  height: auto;
+  padding: 50px 0;
+}
+
+#resume-section h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #000;
+  padding-bottom: 50px;
+}
+
+#resume-section .heading {
+  width: 100%;
+  max-width: 210px;
+  height: auto;
+}
+
+#resume-section h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 600;
+  color: #000;
+  padding-bottom: 10px;
+}
+
+#resume-section .rsm_about {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+#resume-section .abt_time {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+#resume-section h4 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+
+#resume-section .abt_jb {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+#resume-section .jb_dscpt p {
+  font-family: "Work Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: #000;
+}
+
+#resume-section .skils{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media (max-width: 991px){
+    #resume-section .heading {
+        max-width: 100%;
+      }
+
+      #resume-section .abt_jb {
+        max-width: 100%;
+      }
+
+      #resume-section .rsm_about {
+        flex-direction: column-reverse;
+      }
+}

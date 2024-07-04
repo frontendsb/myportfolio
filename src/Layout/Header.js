@@ -1,7 +1,9 @@
-import React from "react";
-import { Link } from 'react-router-dom'
+import React, { useState } from "react";
+import { Link } from 'react-router-dom';
+import Contact from "../component/Contact";
 
 function Header() {
+  const [openModal, setOpenModal] = useState(false);
   return (
     <>
       <header id="header-section">
@@ -34,7 +36,7 @@ function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
+                <Link className="nav-link" to='/contact' onClick={() => {setOpenModal(true)}}>
                   Contact
                 </Link>
               </li>
@@ -43,6 +45,7 @@ function Header() {
         </nav>
         </div>
       </header>
+      {openModal &&<Contact closeModal={setOpenModal}/>}
     </>
   );
 }
